@@ -30,6 +30,9 @@ repo_root_style = 'bold pink'
 style = 'bold blue'
 symbol = ''
 
+[hostname]
+ssh_symbol = ''
+
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
 flamingo = "#f2cdcd"
