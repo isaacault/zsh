@@ -22,3 +22,13 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-12.6/lib64/
 
 # ccache
 export PATH=/usr/lib64/ccache/:$PATH
+
+# Local clangd
+export PATH=$PATH:/home/isaac/builds/llvm/Release/bin
+
+# Unified Runtime
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/isaac/builds/unified-runtime/lib/
+
+# Blender
+export CYCLES_ONEAPI_ALL_DEVICES=1
+export ONEAPI_DEVICE_SELECTOR=cuda:gpu
