@@ -25,15 +25,12 @@ alias vimdiff='nvim -d'
 alias vim='nvim'
 alias vi='nvim'
 
-# Hook direnv
-eval "$(direnv hook zsh)"
-
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
 # Syntax Highlighting
 source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Starship prompt (https://starship.rs)
-eval "$(starship init zsh)"
-export STARSHIP_CONFIG=$ZDOTDIR/prompt/starship.toml
+fpath+=($ZDOTDIR/plugins/pure)
+autoload -U promptinit; promptinit
+prompt pure
