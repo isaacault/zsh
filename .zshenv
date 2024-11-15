@@ -16,19 +16,26 @@ export HISTFILE="$ZDOTDIR/.zsh_history"    # History filepath
 export HISTSIZE=10000                   # Maximum events for internal history
 export SAVEHIST=10000                   # Maximum events in history file
 
-# NVIDIA / CUDA
-export PATH=$PATH:/usr/local/cuda-12.6/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-12.6/lib64/
-
 # ccache
 export PATH=/usr/lib64/ccache/:$PATH
 
 # Local clangd
-export PATH=$PATH:/home/isaac/builds/llvm/Release/bin
+export PATH=$PATH:/home/isaac/builds/llvm/clean/bin
 
 # Unified Runtime
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/isaac/builds/unified-runtime/lib/
 
-# Blender
-export CYCLES_ONEAPI_ALL_DEVICES=1
-export ONEAPI_DEVICE_SELECTOR=cuda:gpu
+# OpenCL
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/isaac/sdk/OpenCL-ICD-Loader/install/lib
+
+# opt bins
+export PATH=$PATH:/opt/nvim-linux64/bin
+export PATH=$PATH:/opt # fzf
+export PATH=$PATH:/opt/cmake-3.31.0-linux-x86_64/bin
+
+# Repositories
+export UR_SOURCE=$HOME/repositories/unified-runtime
+export DPCPP_SOURCE=$HOME/repositories/llvm
+
+# Python bins
+export PATH=$PATH:$HOME/.local/bin
