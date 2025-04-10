@@ -34,3 +34,6 @@ source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fpath+=($ZDOTDIR/plugins/pure)
 autoload -U promptinit; promptinit
 prompt pure
+
+# zsh-autoenv
+source $ZDOTDIR/plugins/zsh-autoenv/autoenv.zsh

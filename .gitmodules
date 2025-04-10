@@ -7,3 +7,6 @@
 [submodule "plugins/pure"]
 	path = plugins/pure
 	url = https://github.com/sindresorhus/pure.git
+[submodule "plugins/zsh-autoenv"]
+	path = plugins/zsh-autoenv
+	url = https://github.com/Tarrasch/zsh-autoenv.git
